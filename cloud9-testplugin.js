@@ -35,9 +35,9 @@ module.exports = ext.register("ext/testplugin/testplugin", {
         var _self = this;
         this.winTestPlugin = winTestPlugin;
         this.btnClose = btnClose;
-       /* this.btnClose.addEventListener('click', __bind(function() {
+        this.btnClose.addEventListener('click', __bind(function() {
           return this.winTestPlugin.close();
-        }, this));*/
+        }, this));
         
         commands.addCommand({
             name: "sayhello",
