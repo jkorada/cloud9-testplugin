@@ -34,10 +34,10 @@ module.exports = ext.register("ext/testplugin/testplugin", {
     init : function(){
         var _self = this;
         this.winTestPlugin = winTestPlugin;
-        this.btnClose = btnClose;
+       /* this.btnClose = btnClose;
         this.btnClose.addEventListener('click', __bind(function() {
           return this.winTestPlugin.close();
-        }, this));
+        }, this));*/
         
         commands.addCommand({
             name: "sayhello",
@@ -90,8 +90,8 @@ module.exports = ext.register("ext/testplugin/testplugin", {
             item.destroy(true, true);
         });
         this.nodes = [];
-        this.btnClose.removeEventListener('click');
-        this.btnClose.destroy(true, true);
+       // this.btnClose.removeEventListener('click');
+      //  this.btnClose.destroy(true, true);
     },
 
      closeTestPluginWindow : function(){
